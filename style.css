@@ -1,0 +1,213 @@
+/* ОБЩИЕ НАСТРОЙКИ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #e94b35;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #e94b35 !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffe0a3 !important;
+}
+
+.hero {
+    background: linear-gradient(120deg, #e94b35, #ff914d);
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 45px 0 30px;
+    color: #d9432d;
+}
+
+.food-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.food-card .card-body {
+    padding: 20px;
+}
+
+.price {
+    color: #e94b35;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.btn-food {
+    background-color: #e94b35;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-food:hover {
+    background-color: #c73524;
+    color: white;
+}
+
+.info-box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+footer {
+    background-color: #292929;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.promo-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.promo-card h3 {
+    color: #e94b35;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.cart-total {
+    background: #fff0e8;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* CSS-МОДАЛЬНОЕ ОКНО БЕЗ JAVASCRIPT */
+.modal-css {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.modal-css:target {
+    display: flex;
+}
+
+.modal-content-css {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.close-modal {
+    display: inline-block;
+    margin-top: 15px;
+    color: #e94b35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar .nav-link {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .food-card img {
+        height: 180px;
+    }
+}
